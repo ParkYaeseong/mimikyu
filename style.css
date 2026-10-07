@@ -447,3 +447,19 @@ main {
        margin: 0.5rem 0;
     }
 }
+
+/* Research project additions */
+body:not(.aos-enabled) [data-aos] { opacity: 1; transform: none; }
+.profile-current { color: var(--text-color); font-size: .95rem; line-height: 1.8; margin-top: 1.6rem; }
+.recent-project { display: flex; flex-direction: column; scroll-margin-top: 100px; }
+.recent-project h3 { color: #fff; font-size: 1.35rem; line-height: 1.5; margin-bottom: 1rem; }
+.recent-project ul, .domain-experience { padding-left: 1.2rem; }
+.recent-project li, .domain-experience li { margin-bottom: .65rem; }
+.project-tech { color: var(--accent-color); font-size: .9rem; margin-top: auto; padding-top: 1rem; }
+.project-scope { font-size: .9rem; border-left: 2px solid var(--accent-color); padding-left: .8rem; }
+section[id] { scroll-margin-top: 80px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+    [data-aos] { opacity: 1 !important; transform: none !important; }
+}
