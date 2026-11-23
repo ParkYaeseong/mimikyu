@@ -1,506 +1,337 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박예성 포트폴리오 | Bio-AI · AI for Science Engineer</title>
-    <meta name="description" content="박예성의 Bio-AI 포트폴리오. RAPID 단백질 설계, 항체 계산 평가, LabNote AI·GraphRAG·MCP, GPU 운영과 의료 AI 프로젝트를 소개합니다.">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yaeseong Park | Bio-AI &amp; Scientific Software</title>
+  <meta name="description" content="Yaeseong Park builds scientific software at the intersection of biology, machine learning, and research infrastructure. Explore Virtual Cell Challenge 2026 and selected projects.">
+  <meta name="theme-color" content="#f5f7f4">
+  <link rel="canonical" href="https://parkyaeseong.github.io/mimikyu/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yaeseong Park | Bio-AI &amp; Scientific Software">
+  <meta property="og:description" content="Scientific software, research platforms, and team mimikyu’s 2026 Virtual Cell Challenge result.">
+  <meta property="og:url" content="https://parkyaeseong.github.io/mimikyu/">
+  <meta property="og:image" content="https://parkyaeseong.github.io/mimikyu/images/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Yaeseong Park, Bio-AI and Scientific Software">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&amp;family=Geist:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-
-<header class="main-header">
-    <div class="container text-center" data-aos="fade-in" data-aos-duration="1000">
-        <img src="images/profile.jpg" alt="박예성 프로필 사진" class="img-fluid profile-hero-img mb-4">
-        <h1>박예성</h1>
-        <p class="subtitle">Bio-AI · AI for Science Engineer</p>
-        <p class="quote">생물학 데이터와 AI 모델을 연결해<br>반복 실행하고 검토할 수 있는 연구 소프트웨어를 만듭니다.</p>
-        <p class="profile-current">한국생명공학연구원 · 국가바이오파운드리사업단 전산팀 연구원<br>2025.09 ~ 현재</p>
-        <a href="#recent-research" class="btn btn-outline-light mt-3">최근 연구 플랫폼 프로젝트 보기</a>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top"><span aria-hidden="true">YP</span> Yaeseong Park</a>
+      <nav aria-label="Main navigation">
+        <a href="#recent-research">Work</a>
+        <a href="#career-experience">Career</a>
+        <a href="#about-me">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand d-lg-none" href="#">박예성</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#recent-research"><i class="fas fa-rocket"></i> Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#career-experience"><i class="fas fa-briefcase"></i> Career</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-me"><i class="fas fa-user"></i> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  <main id="main">
+    <section class="shell hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="indicator"></span> Bio-AI &amp; Scientific Software</p>
+        <h1 id="intro-title">Yaeseong<br>Park<span>.</span></h1>
+        <p class="hero-lead">I build software that helps researchers run scientific models, trace their outputs, and use the results in their work.</p>
+        <p class="affiliation">Researcher · K-BioFoundry, KRIBB</p>
+        <div class="actions">
+          <a class="button primary" href="#recent-research">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#vcc-2026">VCC 2026 result <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="images/profile.jpg" alt="Portrait of Yaeseong Park" width="1046" height="1423" fetchpriority="high">
+        <figcaption>Yaeseong Park <span>Republic of Korea</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="shell">
+      <section id="vcc-2026" class="challenge" aria-labelledby="challenge-title">
+        <div class="achievement">
+          <p class="eyebrow">Final leaderboard</p>
+          <p class="rank">68<sup>th</sup></p>
+          <p class="team">Team mimikyu</p>
+        </div>
+        <div class="challenge-copy">
+          <p class="eyebrow">Arc Institute · 2026</p>
+          <h2 id="challenge-title">Virtual Cell Challenge</h2>
+          <p>Our team tackled zero-shot prediction of gene-expression responses to genetic perturbations in held-out cell contexts.</p>
+          <div class="actions">
+            <a class="button challenge-button" href="https://virtualcellchallenge.org/leaderboard#final">Final leaderboard <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://arcinstitute.org/news/virtual-cell-challenge-2026-wrap-up">Arc Institute’s recap <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="recent-research" class="shell section" aria-labelledby="research-title">
+      <header class="section-heading">
+        <h2 id="research-title">Bio-AI &amp; research platforms</h2>
+        <p>Software for running biological models, managing research records, and operating the compute behind them.</p>
+      </header>
+
+      <div class="project-grid">
+        <article id="rapid" class="project">
+          <p class="eyebrow">Research project · Nov 2025–present</p>
+          <h3>RAPID Protein Design Pipeline</h3>
+          <p>I designed and implemented a protein redesign workflow that connects structure generation, sequence design, predictive evaluation, and candidate reporting.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <ul>
+              <li>Integrated RFD3, BioEmu, ProteinMPNN, SoluProt, and AF2/ColabFold.</li>
+              <li>Supported design constraints, per-run artifacts, caching, partial reruns, and candidate comparison and export.</li>
+              <li>Connected MCP tools for execution, status, and analysis with RunPod operations.</li>
             </ul>
-        </div>
-    </div>
-</nav>
+          </details>
+          <p class="stack">Python · PyTorch · Docker · MCP · RunPod</p>
+        </article>
 
-<main>
-    <section id="recent-research" class="section">
-        <div class="container">
-            <h2 class="section-title">Bio-AI &amp; Research Platforms</h2>
-            <p class="section-description">단백질·항체 설계 모델, 연구 기록과 계산 자원을 연결하는 최근 프로젝트입니다. 프로젝트별로 구현 내용과 제 역할을 정리했습니다.</p>
-            <div class="row g-4">
-                <div class="col-lg-6 d-flex align-items-stretch">
-                    <article id="rapid" class="project-card recent-project">
-                        <p class="project-duration">업무 프로젝트 · 2025.11 ~ 현재</p>
-                        <h3>RAPID 단백질 설계 파이프라인</h3>
-                        <p><b>역할·구현 범위:</b> 파이프라인 설계·구현 및 모델·MCP 연동</p>
-                        <p>구조 생성부터 서열 설계, 예측 평가, 후보 비교·보고까지 단백질 재설계 흐름을 연결합니다.</p>
-                        <ul><li>MSA·보존도·리간드 주변 잔기 마스크를 활용한 설계 제약 구성</li><li>RFD3·BioEmu, ProteinMPNN, SoluProt, AF2/ColabFold 모델 단계 연동</li><li>실행별 산출물 보존, 입력 변경 확인·단계 캐시 관리, 부분 재실행 및 후보 비교·내보내기</li><li>MCP 실행·상태 확인·분석 도구와 RunPod 운영 화면 연결</li></ul>
-                        <p class="project-tech">Python · PyTorch · Docker · MCP · RunPod</p>
-                    </article>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                    <article id="antibody-design" class="project-card recent-project">
-                        <p class="project-duration">업무 프로젝트 · 2026.08 ~ 현재</p>
-                        <h3>항체–항원 복합체 기반 항체 디자인</h3>
-                        <p><b>역할·구현 범위:</b> 항체 디자인·계산 평가 워크플로우 및 서비스 구현</p>
-                        <p>항원과 항체 프레임워크의 보존 조건을 반영한 CDR 후보 설계와 복합체 계산 평가를 구성합니다.</p>
-                        <ul><li>IMGT 번호 매김과 항원 접촉 잔기 분석으로 설계 범위 구성</li><li>항원·프레임워크·보호 잔기 보존 조건을 적용한 CDR 중심 후보 생성</li><li>복합체 구조 예측 및 ipSAE·ipTM·pDockQ 인터페이스 지표 기반 평가·시각화</li></ul>
-                        <p class="project-tech">IMGT · CDR · 복합체 구조 예측 · 계산 평가</p>
-                        <p class="project-scope">계산 기반 후보 생성·평가 프로젝트이며, 실험적 결합력·생물학적 기능 검증 성과를 주장하지 않습니다.</p>
-                    </article>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                    <article id="labnote" class="project-card recent-project">
-                        <p class="project-duration">업무 프로젝트 · 초기 구축 2025.09 ~ 2025.12, 이후 확장</p>
-                        <h3>LabNote AI · GraphRAG · MCP</h3>
-                        <p><b>역할·구현 범위:</b> 연구 기록 구조화, 검색·작성 보조 및 분석 도구 연동</p>
-                        <p>실험 기록, 논문과 연구 워크플로우를 검색하고 근거를 확인할 수 있는 연구 노트 지원 시스템입니다.</p>
-                        <ul><li>실험 목적·조건·결과·해석을 정리하는 노트 기능, 임베딩 기반 검색 및 요약 리포트 구현</li><li>Qdrant 벡터 검색과 Neo4j 그래프 확장을 결합한 GraphRAG 구성</li><li>답변 근거와 사람 검토 필요 표시, 연구노트 조회·작성 보조 MCP 도구 구성</li><li>Open Notebook·MCP 연동으로 기록 조회, 코드 실행, 결과 요약 및 노트 반영 흐름 구현</li></ul>
-                        <p class="project-tech">Python · LLM API · Qdrant · Neo4j · RAG · MCP</p>
-                        <p class="github-link"><a href="https://github.com/ParkYaeseong/labnote-ai-assitant" target="_blank" rel="noopener noreferrer">공개 LabNote 소개 자료 <span aria-hidden="true">↗</span></a></p>
-                    </article>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                    <article id="model-portal" class="project-card recent-project">
-                        <p class="project-duration">공개 구현</p>
-                        <h3>단백질 모델 포털</h3>
-                        <p><b>역할·구현 범위:</b> 로컬 GPU 워커와 클라우드 모델 실행을 연결하는 웹 플랫폼</p>
-                        <p>단백질 모델을 하나의 웹 UI에서 실행하고 결과를 확인할 수 있도록 로컬 워커와 RunPod/Biohub API를 통합합니다.</p>
-                        <ul><li>RunPod Serverless 호환 게이트웨이를 통한 로컬 HTTP 워커 연동</li><li>FastAPI 백엔드의 작업 저장·상태 폴링과 Next.js 대시보드</li><li>NGL 3D 뷰어를 통한 구조 결과 확인 및 운영·온보딩 문서 구성</li></ul>
-                        <p class="project-tech">FastAPI · Next.js · SQLite · NGL · GPU · RunPod</p>
-                        <p class="github-link"><a href="https://github.com/ParkYaeseong/bio_model_portal" target="_blank" rel="noopener noreferrer">구현 저장소 <span aria-hidden="true">↗</span></a></p>
-                    </article>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                    <article id="gpu-operations" class="project-card recent-project">
-                        <p class="project-duration">업무 경험 · 공개 운영 절차</p>
-                        <h3>GPU·서버 및 RunPod 운영</h3>
-                        <p><b>역할·구현 범위:</b> 연구용 모델 실행 환경과 자원 모니터링 구성</p>
-                        <p>모델 추론을 반복 수행할 수 있도록 실행 환경을 관리하고 서버·클라우드 자원 상태를 확인하는 운영 화면을 구성합니다.</p>
-                        <ul><li>GPU·CPU·메모리·디스크 및 클라우드 자원 사용량 모니터링</li><li>RunPod 엔드포인트·워커 상태와 사용량 확인</li><li>Docker 서비스 배포, Caddy 라우팅·Keycloak SSO 운영 구성</li></ul>
-                        <p class="project-tech">Linux · Docker · RunPod · Caddy · Keycloak</p>
-                        <p class="github-link"><a href="https://github.com/ParkYaeseong/runpod_serverless_ops" target="_blank" rel="noopener noreferrer">RunPod 운영 절차 저장소 <span aria-hidden="true">↗</span></a></p>
-                    </article>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                    <article id="research-agent" class="project-card recent-project">
-                        <p class="project-duration">공개 구현 · 연구 자동화 프로토타입</p>
-                        <h3>Multi-Agent Research Pipeline</h3>
-                        <p><b>역할·구현 범위:</b> 질문 분해부터 출처 검토·종합·비평·보고서까지 연결</p>
-                        <p>LangGraph로 연구 질문을 하위 질문으로 분해하고 검색 결과의 평가, 중복 제거, 종합 및 비평을 거쳐 구조화된 보고서를 만드는 파이프라인입니다.</p>
-                        <ul><li>계획·검색·출처 평가·중복 제거·종합·비평·보고의 단계 구성</li><li>출처, 근거와 주장 확실성 수준을 포함한 결과 보고</li><li>모의 검색·결정론적 실행과 API 기반 LLM 실행 구성을 구분한 프로토타입</li></ul>
-                        <p class="project-tech">Python · LangGraph · LLM API · 출처 평가</p>
-                        <p class="github-link"><a href="https://github.com/ParkYaeseong/research-pipeline" target="_blank" rel="noopener noreferrer">구현 저장소 <span aria-hidden="true">↗</span></a></p>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects-achievements" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">Medical AI &amp; Public Projects</h2>
-            <p class="section-description">항체 서열 분석, 의료 AI 및 CDSS 교육·개인 프로젝트입니다. 공개 코드와 시연 자료를 함께 볼 수 있습니다.</p>
+        <article id="antibody-design" class="project">
+          <p class="eyebrow">Research project · Aug 2026–present</p>
+          <h3>Antibody Design &amp; Computational Evaluation</h3>
+          <p>I implemented a research workflow for candidate generation and computational review of predicted antibody–antigen complexes.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <ul>
+              <li>Used IMGT numbering to organize design regions and preserved specified regions of the complex.</li>
+              <li>Visualized predicted structures and interface metrics, including ipSAE, ipTM, and pDockQ.</li>
+              <li>Binding and biological function require experimental validation.</li>
+            </ul>
+          </details>
+          <p class="stack">IMGT · Structure prediction · Interface metrics</p>
+        </article>
 
-            <div class="project-card featured-project-card mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="project-card-title">🚀 MEORING CDSS: 환자 맞춤형 다중모달리티 임상 의사결정 지원 시스템</h3>
-                <p class="project-duration"><i>2025.05 ~ 2025.07 (교육 팀 프로젝트)</i></p>
-                <div class="project-details">
-                    <p><b>역할:</b> 프로젝트 리더(PL) & 풀스택 개발자</p>
-                    <p><b>개요:</b> 의료진이 EMR, 다중오믹스, CT 영상 등 분산된 의료 데이터를 통합 분석하고, AI 기반의 암 진단 및 예후 예측 결과를 임상 현장에서 효과적으로 활용할 수 있는 웹 기반 CDSS (Clinical Decision Support System)를 구축하는 것이 목표. 최종적으로는 AI 분석 결과를 OpenEMR 등 기간계 시스템과 연동하여 진료 워크플로우에 통합하는 것을 목표로 함.</p>
-                    <div class="achievements-list">
-                        <h4>주요 성과:</h4>
-                        <ul>
-                            <li data-aos="fade-left" data-aos-delay="200"><b>EHR 연동 풀스택 시스템 아키텍처 설계:</b> OpenEMR, LIS, PACS 데이터를 연동하고 Django(Python) 백엔드와 React/Flutter 프론트엔드를 연결하는 전체 시스템 아키텍처 설계.</li>
-                            <li data-aos="fade-left" data-aos-delay="250"><b>AI 오케스트레이터 설계 및 비동기 처리 도입:</b> 다양한 AI 모델 호출, 데이터 전처리, 결과 반환을 관리하는 AI 오케스트레이터 설계. Celery를 활용한 비동기 처리 방식으로 대규모 분석 효율성 확보.</li>
-                            <li data-aos="fade-left" data-aos-delay="300"><b>Python/R 기반 분석 및 웹/모바일 애플리케이션 개발:</b> Django REST Framework로 핵심 도메인 API 서버 구축 및 역할 기반 접근 제어(RBAC) 구현. React로 다중모달리티 데이터 분석 결과 대시보드 개발 및 XAI 분석 결과 시각화(SHAP, Grad-CAM) 구현.</li>
-                            <li data-aos="fade-left" data-aos-delay="350"><b>생성형 AI 및 통계 알고리즘 연동 개발:</b> 췌장암, 유방암, 난소암, 간암, 폐암 등 진단/예후 예측 AI 모델 개발 및 백엔드 API 연동. RAG 기술과 Gemini API 활용 의료 챗봇 구현.</li>
-                            <li data-aos="fade-left" data-aos-delay="400"><b>규칙 기반 약물 상호작용 엔진 개발:</b> 국내 약물 API와 연동하여 약물 상호작용 및 안전성을 검토하는 엔진 개발 및 OCS 연동.</li>
-                            <li data-aos="fade-left" data-aos-delay="450"><b>엔드투엔드 프로젝트 관리 및 기술 리더십:</b> 데이터 수집/정제부터 모델 학습/평가, XAI 기반 결과 해석까지 프로젝트 전 과정을 PL로서 주도적으로 수행하며, 팀원들의 기술 성장을 지원.</li>
-                        </ul>
-                    </div>
-                    <div class="text-center my-4">
-                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#cdssVideoModal">
-                            <i class="fas fa-play-circle"></i> CDSS 시연 영상 보기
-                        </button>
-                    </div>
-                    <p class="github-link"><b>Github:</b> <a href="https://github.com/ParkYaeseong/CDSS.git" target="_blank" rel="noopener noreferrer">https://github.com/ParkYaeseong/CDSS.git</a></p>
-                    <p class="github-link"><b>Paper:</b> <a href="https://www.medrxiv.org/content/10.1101/2025.07.12.25331423v1" target="_blank" rel="noopener noreferrer">Explainable AI for Precision Oncology: A Task-Specific Approach Using Imaging, Multi-omics, and Clinical Data</a></p>
-                </div>
-            </div>
+        <article id="labnote" class="project">
+          <p class="eyebrow">Research project · Started Sep 2025</p>
+          <h3>LabNote AI, GraphRAG &amp; MCP</h3>
+          <p>I built tools to structure, search, and draft research notes while keeping results linked to the records and papers they draw from.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <ul>
+              <li>Structured experiment notes around objectives, conditions, results, and interpretation.</li>
+              <li>Combined Qdrant vector retrieval with Neo4j graph expansion and flagged outputs for human review.</li>
+              <li>Connected Open Notebook and MCP tools for note retrieval, analysis, and reporting.</li>
+            </ul>
+          </details>
+          <p class="stack">Python · Qdrant · Neo4j · RAG · MCP</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/labnote-ai-assitant">LabNote project overview <span aria-hidden="true">↗</span></a>
+        </article>
 
-            <h3 class="sub-section-title" data-aos="fade-right">🔬 주요 프로젝트</h3>
-            <div class="row g-4">
-                <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <h4><b> Antibody-Antigen-AI: 딥러닝 기반 항체 서열 분석 및 Isotype 예측</b></h4>
-                        <p class="project-duration"><i>2025.02 ~ 2025.05</i></p>
-                        <p>공개 VH/VL 서열을 전처리하고 LSTM 기반 VAE, AntiBERTy·IgBert·ESM-2 표현을 비교해 Isotype 예측을 평가했습니다. 클래스 불균형 처리와 VAE·PPO 기반 서열 생성 탐색을 수행했습니다. Isotype 예측 확률을 보상으로 사용한 계산 실험으로, 항원 결합력이나 생물학적 기능의 실험 검증을 의미하지 않습니다.</p>
-                        <p class="github-link mt-auto"><b>Github:</b> <a href="https://github.com/ParkYaeseong/Antibody-Antigen-AI" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card">
-                        <h4><b> 통합 암 분석: 다중 오믹스, 임상, CT 영상 분석 파이프라인 (with XAI)</b></h4>
-                        <p class="project-duration"><i>2025.05 ~ 2025.06</i></p>
-                        <p>다중 오믹스, 임상 정보, 3D CT 영상 등 이종 데이터를 통합 분석하여 암을 예측하고, AI 모델의 판단 근거를 시각적으로 설명하는 해석 가능한(XAI) 엔드투엔드 파이프라인을 구축. SHAP 기반 특징 중요도 분석과 SwinUNETR 및 Grad-CAM 적용을 통해 모델 해석 가능성 강화.</p>
-                        <p class="github-link mt-auto"><b>Github:</b> <a href="https://github.com/ParkYaeseong/XAI_multi-omics_CT_Clinical.git" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <h4><b> 3D 의료영상 기반 암 진단 및 분할</b></h4>
-                        <p class="project-duration"><i>2025.04</i></p>
-                        <p>CT/MRI 영상 데이터를 활용하여 3D CNN으로 암 유무를 분류하고, 3D U-Net으로 병변 위치를 분할하는 모델을 개발. 예측 결과를 3D로 시각화하여 직관적인 이해 제공. DICOM-NIfTI 변환, 정합 등 의료 영상 전처리 과정 직접 설계.</p>
-                        <p class="github-link mt-auto"><b>Github:</b> <a href="https://github.com/ParkYaeseong/pancreatic-cancer-AI-3DCNN-Unet-" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card">
-                        <h4><b> 췌장암 조기진단 머신러닝 모델 개발</b></h4>
-                        <p class="project-duration"><i>2025.03</i></p>
-                        <p>임상, 생활 습관, 유전체 데이터를 융합 분석하여 췌장암 조기 진단 및 전이 가능성을 예측하는 머신러닝 모델(로지스틱 회귀, 랜덤 포레스트, XGBoost, SVM 등)을 개발. GridSearchCV를 활용한 하이퍼파라미터 튜닝 및 Feature Engineering으로 모델 성능 최적화.</p>
-                        <p class="github-link mt-auto"><b>Github:</b> <a href="https://github.com/ParkYaeseong/CNV-cancer_predict-" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <h4><b> 임상 데이터를 활용한 암 예후 및 치료 효과 예측 분석</b></h4>
-                        <p class="project-duration"><i>2025.06</i></p>
-                        <p>TCGA Clinic data를 활용하여 간암, 신장암, 난소암, 위암에 대한 임상 데이터 기반의 생존 예측, 위험도 계층화, 치료 효과 예측 모델을 개발하고 평가합니다. SHAP, LIME과 같은 XAI 기법을 적용하여 모델의 임상적 해석 가능성을 높였습니다.</p>
-                        <p class="github-link mt-auto"><b>Github:</b> <a href="https://github.com/ParkYaeseong/Cinical_Data_Cancer" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-                    </div>
-                </div>
-                 <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <h4><b> 감염병 시계열 분석</b></h4>
-                        <p class="text-muted"><i>2025.03</i></p>
-                        <p>코로나19 확진자 및 예방 접종률, 사회적 거리두기 등 외생변수 데이터를 활용하여 감염병 유행 시기를 예측하는 시계열 모델(VAR, SARIMAX) 개발. 공공 보건 정책 결정에 기여할 수 있도록 최적 모델 선정 및 결과 시각화.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <article id="model-portal" class="project">
+          <p class="eyebrow">Public implementation</p>
+          <h3>Protein Model Portal</h3>
+          <p>A web interface for running protein models on local GPU workers and external model APIs and inspecting the resulting structures.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <ul>
+              <li>Connected local HTTP workers and RunPod/Biohub through a RunPod Serverless-compatible gateway.</li>
+              <li>Built job persistence and polling in FastAPI, a Next.js dashboard, and an NGL structure viewer.</li>
+              <li>Prepared onboarding and operations documentation.</li>
+            </ul>
+          </details>
+          <p class="stack">FastAPI · Next.js · SQLite · NGL · RunPod</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/bio_model_portal">Protein Model Portal repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article id="gpu-operations" class="project">
+          <p class="eyebrow">Research infrastructure</p>
+          <h3>GPU &amp; RunPod Operations</h3>
+          <p>I maintained environments for repeatable model inference and built monitoring views for local and cloud resources.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <ul>
+              <li>Monitored server utilization and RunPod endpoint, worker, and usage metrics.</li>
+              <li>Configured Docker deployments, Caddy routing, and Keycloak single sign-on.</li>
+            </ul>
+          </details>
+          <p class="stack">Linux · Docker · RunPod · Caddy · Keycloak</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/runpod_serverless_ops">RunPod operations guide <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article id="research-agent" class="project">
+          <p class="eyebrow">Public prototype</p>
+          <h3>Multi-Agent Research Pipeline</h3>
+          <p>A LangGraph prototype that breaks a research question into smaller questions, checks and deduplicates sources, and produces a structured report with evidence and confidence levels.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <p>The pipeline includes planning, retrieval, source review, synthesis, critique, and reporting. It supports deterministic runs with mock search and an API-backed LLM execution mode.</p>
+          </details>
+          <p class="stack">Python · LangGraph · LLM APIs · Source evaluation</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/research-pipeline">Research pipeline repository <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <div class="related" aria-label="More public research tools">
+        <a href="https://github.com/ParkYaeseong/BioPilot"><strong>BioPilot</strong><span>Protein-variant review with an evidence trail</span><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/ParkYaeseong/llm-tuning-factory"><strong>LLM Tuning Factory</strong><span>Training workflows and experiment tracking</span><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/sblabkribb/labnoteo-desktop"><strong>labnoteO Desktop</strong><span>Local-first research notebook for Windows</span><span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
-    <section id="skills" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">Skills</h2>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="sub-section-title">Technical & AI Skills</h3>
-                    <div class="skills-grid">
-                        <span class="tag">Protein Design</span><span class="tag">Computational Biology</span><span class="tag">ProteinMPNN</span><span class="tag">RFD3</span><span class="tag">ColabFold</span><span class="tag">Qdrant</span><span class="tag">Neo4j</span><span class="tag">MCP</span><span class="tag">RunPod</span><span class="tag">FastAPI</span><span class="tag">Medical AI</span><span class="tag">Deep Learning</span><span class="tag">Computer Vision (3D)</span><span class="tag">Omics Data Analysis</span><span class="tag">Project Management</span><span class="tag">System Architecture</span><span class="tag">Python (Django, DRF)</span><span class="tag">R</span><span class="tag">React.js</span><span class="tag">Flutter</span><span class="tag">MySQL/PostgreSQL</span><span class="tag">XAI (SHAP, Grad-CAM)</span><span class="tag">Celery</span><span class="tag">Docker</span><span class="tag">Git/GitHub</span><span class="tag">XGBoost</span><span class="tag">LightGBM</span><span class="tag">RandomForest</span><span class="tag">SVM</span><span class="tag">RAG</span><span class="tag">LLM (Gemini API)</span><span class="tag">VectorDB</span><span class="tag">Nginx</span><span class="tag">Gunicorn</span><span class="tag">Apache</span><span class="tag">MONAI</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">nnU-Net</span><span class="tag">SimpleITK</span><span class="tag">DICOM</span><span class="tag">PACS (Orthanc)</span><span class="tag">EHR Integration</span>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-                    <h3 class="sub-section-title">Medical & Biological Domain Expertise</h3>
-                    <ul class="domain-experience">
-                        <li><b>단백질·항체 설계:</b> 구조·서열 모델 연동, CDR 설계 제약 및 계산 평가</li>
-                        <li><b>연구 워크플로우:</b> RAG 검색, 근거 관리, MCP 분석 도구 연동</li>
-                        <li><b>의료 AI:</b> 오믹스·임상·CT 데이터 처리, 예측 모델 및 XAI 시각화</li>
-                        <li><b>연구 현장:</b> 세포·동물 실험, 인체유래물·연구 문서 관리</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="projects-achievements" class="shell section" aria-labelledby="medical-title">
+      <header class="section-heading">
+        <h2 id="medical-title">Medical AI &amp; public projects</h2>
+        <p>Coursework and independent projects in clinical decision support, explainable AI, and biological data analysis.</p>
+      </header>
+
+      <article id="meoring" class="project case-study">
+        <div>
+          <p class="eyebrow">Team lead &amp; full-stack developer · May–Jul 2025</p>
+          <h3>MEORING Clinical Decision Support System</h3>
+          <p>A team project that brought together clinical records, multi-omics, and CT imaging in a web-based decision-support prototype.</p>
+          <details>
+            <summary>Implementation details</summary>
+            <ul>
+              <li>Designed the EHR, LIS, and PACS integration architecture and built Django REST APIs with role-based access control.</li>
+              <li>Orchestrated asynchronous model execution with Celery and built web and mobile interfaces with React and Flutter.</li>
+              <li>Integrated oncology prediction workflows and visualized explanations using SHAP and Grad-CAM.</li>
+              <li>Prototyped a retrieval-based chatbot and a rule-based medication interaction check. Led the team across data preparation, modeling, and evaluation.</li>
+            </ul>
+          </details>
+          <div class="actions">
+            <a class="button primary" href="https://www.youtube.com/embed/hA8ppIV185s">Watch demo <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/ParkYaeseong/CDSS.git">CDSS code <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="paper"><a class="text-link" href="https://www.medrxiv.org/content/10.1101/2025.07.12.25331423v1">Preprint: Explainable AI for Precision Oncology <span aria-hidden="true">↗</span></a></p>
         </div>
+        <img src="images/clinic.png" width="1913" height="945" alt="MEORING clinical decision support dashboard" loading="lazy">
+      </article>
+
+      <div class="project-grid medical-grid">
+        <article class="project">
+          <p class="eyebrow">Feb–May 2025</p>
+          <h3>Antibody Sequence Analysis &amp; Isotype Prediction</h3>
+          <p>Compared an LSTM variational autoencoder with AntiBERTy, IgBert, and ESM-2 representations for classifying antibody isotypes from public VH/VL sequences. The project evaluated computational predictions.</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/Antibody-Antigen-AI">Isotype prediction code <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow">May–Jun 2025</p>
+          <h3>Explainable Multimodal Cancer Analysis</h3>
+          <p>Built a pipeline that combined multi-omics, clinical information, and 3D CT data for cancer prediction and used SHAP, SwinUNETR, and Grad-CAM to interpret model behavior.</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/XAI_multi-omics_CT_Clinical.git">Multimodal analysis code <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow">Apr 2025</p>
+          <h3>3D Medical Imaging for Cancer Classification</h3>
+          <p>Developed 3D CNN classification, 3D U-Net lesion segmentation, and interactive visualization. Designed the imaging preprocessing workflow, including DICOM-to-NIfTI conversion and registration.</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/pancreatic-cancer-AI-3DCNN-Unet-">3D imaging code <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow">Mar 2025</p>
+          <h3>Pancreatic Cancer Risk Modeling</h3>
+          <p>Compared logistic regression, random forests, XGBoost, and SVMs on clinical, lifestyle, and genomic features to study early detection and metastatic risk.</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/CNV-cancer_predict-">Risk modeling code <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow">Jun 2025</p>
+          <h3>Cancer Prognosis from Clinical Data</h3>
+          <p>Used TCGA clinical data to evaluate survival, risk stratification, and treatment-effect models across several cancers, with SHAP and LIME for interpretation.</p>
+          <a class="text-link" href="https://github.com/ParkYaeseong/Cinical_Data_Cancer">Prognosis analysis code <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow">Mar 2025</p>
+          <h3>Infectious Disease Time-Series Analysis</h3>
+          <p>Compared VAR and SARIMAX forecasts of COVID-19 case trends using vaccination and distancing data as external variables, and visualized the results.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="career-experience" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">Career & Education</h2>
-
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h3 class="sub-section-title">Career Experience</h3>
-                    <div class="career-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-icon"><i class="fas fa-dna" aria-hidden="true"></i></div>
-                            <div class="timeline-content">
-                                <h4><b>한국생명공학연구원</b> (연구원)</h4>
-                                <p>국가바이오파운드리사업단 전산팀</p>
-                                <p class="text-muted">2025.09 ~ 현재</p>
-                                <ul>
-                                    <li>RAPID 단백질 설계 파이프라인과 항체 디자인·계산 평가 워크플로우 설계·구현</li>
-                                    <li>LabNote AI, Qdrant·Neo4j GraphRAG 및 MCP 기반 연구 노트·분석 도구 연동</li>
-                                    <li>연구용 GPU·서버와 RunPod 자원 모니터링, Docker 기반 서비스 운영</li>
-                                </ul>
-                            </div>
-                        </div>
-                         <div class="timeline-item" data-aos="fade-up">
-                            <div class="timeline-icon"><i class="fas fa-hospital"></i></div>
-                            <div class="timeline-content">
-                                <h4><b>아산생명과학연구원</b> (연구원)</h4>
-                                <p>안과연구원·의과학대 연구 업무</p>
-                                <p class="text-muted"><i>2024.02 ~ 2024.12 (11개월)</i></p>
-                                <ul>
-                                    <li><b>동물시험:</b> Rabbit, mouse, rat 대상 다양한 실험 수행 (피하/복강/근육 주사, 호흡 마취, 경구 투여, 조직/안구 샘플링, TBUT/Tear Volume/Staining 측정, 안구 촬영 등)</li>
-                                    <li><b>Cancer Cell 실험:</b> Cell culture, FACS, migration assay, proliferation assay, Western Blot(WB), collective invasion 등 암세포 관련 실험 수행.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="timeline-icon"><i class="fas fa-university"></i></div>
-                            <div class="timeline-content">
-                                 <h4><b>을지대학교산학협력단 인체유래물은행</b> (연구원)</h4>
-                                <p class="text-muted"><i>2023.06 ~ 2024.01 (8개월)</i></p>
-                                <ul>
-                                    <li><b>인체유래물 관리:</b> 혈액(혈청, 혈장 분리), 검체(swap) 수집, 분리, 분주, 자동화 기기(SAM HD) 활용 보관 및 분양. 관련 동의서 및 서류 정리.</li>
-                                    <li><b>기업 임상 시험 보조:</b> 진단키트(CRP, Flu, Covid) 실험 수행 및 PCR 진행 (수젠텍, 씨젠, 마라 등 협업).</li>
-                                    <li><b>관리 프로그램 개발 참여:</b> EMR 환자 정보 정리 및 자동 업로드 시스템 구축 협업 (진시스템 등 협업).</li>
-                                </ul>
-                            </div>
-                        </div>
-                         <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="timeline-icon"><i class="fas fa-flask"></i></div>
-                            <div class="timeline-content">
-                                <h4><b>한국화학연구원 인턴</b></h4>
-                                <p class="text-muted"><i>2023.03 ~ 2023.06 (4개월)</i></p>
-                                <ul>
-                                    <li>감염병기술전략센터 보고서 검토 및 행사 보조</li>
-                                </ul>
-                            </div>
-                        </div>
-                         <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                            <div class="timeline-icon"><i class="fas fa-building-columns"></i></div>
-                            <div class="timeline-content">
-                                <h4><b>한국과학기술원(KAIST) 연구관리팀</b> (부직학생)</h4>
-                                <p class="text-muted"><i>2020.07 ~ 2021.03 (9개월)</i></p>
-                                <ul>
-                                    <li><b>최종보고서 관리:</b> 계약서 정리 및 스캔을 통한 최종보고서 전산화 작업.</li>
-                                    <li><b>기타 행정 보조:</b> 문서 결재 및 교내/교외 문서 전달 업무.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                 <div class="col-lg-6 mb-4 mb-lg-0">
-                     <h3 class="sub-section-title">Education</h3>
-                     <div class="education-card mb-4" data-aos="fade-up">
-                        <h4><b>중앙대학교 시스템생명공학과</b></h4>
-                        <p class="text-muted"><i>2017.03 ~ 2023.02 (졸업)</i></p>
-                        <p><b>학점:</b> 3.6 / 4.5<br><b>논문:</b> Antibiotic resistance in the environment</p>
-                    </div>
-                     <div class="education-card mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <h4><b>의료 AI 교육 프로젝트</b></h4>
-                        <p class="text-muted"><i>2025년 · 미래융합교육원</i></p>
-                        <p>팀장으로 다중 오믹스, 임상, 3D CT 영상 데이터를 통합 분석하고, XAI를 통해 AI 모델의 판단 근거를 시각화하는 파이프라인 구축 프로젝트 기획 및 총괄.</p>
-                    </div>
-                    <div class="education-card" data-aos="fade-up" data-aos-delay="200">
-                        <h4><b>품질보증(QA) 직무부트캠프</b></h4>
-                        <p class="text-muted"><i>2020.07 ~ 2020.08</i></p>
-                        <p>코멘토 주관 5주 과정. 바이오/제약 산업의 품질 관리 프로세스 및 규제 이해.</p>
-                    </div>
-                </div>
-                 <div class="col-lg-6">
-                    <h3 class="sub-section-title">🏆 Qualifications</h3>
-                     <div class="education-card" data-aos="fade-up">
-                         <p class="mb-3"><b>빅데이터 분석기사</b> (2025.07)</p>
-                         <p class="mb-3"><b>정보처리기사</b> (2025.06)</p>
-                         <p class="mb-3"><b>상공회의소 한자 중급 4급</b> (2023.01)</p>
-                         <p class="mb-0"><b>워드프로세서 2급</b> (2009.03)</p>
-                     </div>
-                </div>
-            </div>
-        </div>
+    <section id="gallery" class="shell section" aria-labelledby="gallery-title">
+      <header class="section-heading">
+        <h2 id="gallery-title">Project gallery</h2>
+        <p>Screenshots and figures from the medical AI projects.</p>
+      </header>
+      <div class="gallery" id="projectCarousel">
+        <figure><a href="images/clinic.png"><img src="images/clinic.png" width="1913" height="945" alt="Clinical dashboard screenshot" loading="lazy"><span>Clinical dashboard</span></a></figure>
+        <figure><a href="images/pancreas.gif"><img src="images/pancreas-still.webp" width="614" height="475" alt="Preview of the 3D pancreas visualization" loading="lazy"><span>3D pancreas visualization (GIF)</span></a></figure>
+        <figure><a href="images/shap_summary_dot_Random%20Forest_fold4.png"><img src="images/shap_summary_dot_Random%20Forest_fold4.png" width="775" height="755" alt="SHAP summary plot for a random forest model" loading="lazy"><span>SHAP feature attribution</span></a></figure>
+        <figure><a href="images/cv_avg_performance_roc_auc_comparison.png"><img src="images/cv_avg_performance_roc_auc_comparison.png" width="1189" height="790" alt="Cross-validation ROC curve comparison" loading="lazy"><span>ROC-AUC comparison</span></a></figure>
+        <figure><a href="images/pca_loadings_miRNA_PCA_PC3.png"><img src="images/pca_loadings_miRNA_PCA_PC3.png" width="1189" height="590" alt="Third principal component loadings for microRNA features" loading="lazy"><span>miRNA PCA loadings</span></a></figure>
+        <figure><a href="images/omics.png"><img src="images/omics.png" width="941" height="948" alt="Multi-omics interface screenshot" loading="lazy"><span>Multi-omics analysis</span></a></figure>
+        <figure><a href="images/ct.png"><img src="images/ct.png" width="1694" height="905" alt="CT imaging interface screenshot" loading="lazy"><span>CT imaging</span></a></figure>
+        <figure><a href="images/flutter.png"><img src="images/flutter.png" width="1894" height="941" alt="React and Flutter application screenshots" loading="lazy"><span>Web and mobile interfaces</span></a></figure>
+      </div>
     </section>
 
-    <section id="about-me" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12 text-center mb-4 mb-lg-0" data-aos="zoom-in">
-                    <img src="images/profile.jpg" alt="박예성" class="img-fluid rounded-circle about-me-img">
-                </div>
-                <div class="col-lg-8 col-md-12" data-aos="fade-left">
-                    <p class="lead">시스템생명공학을 전공하고 연구 현장의 실험·데이터 관리와 AI 소프트웨어 개발을 경험했습니다. 생물학 데이터의 맥락을 이해하고, 모델을 반복 실행할 수 있는 연구 도구로 구성하는 일을 합니다.</p>
-                    <p>의료 AI 교육 프로젝트에서는 오믹스·임상·CT 데이터 분석, 설명 가능한 AI와 CDSS 개발에 참여했습니다. 현재 국가바이오파운드리사업단 전산팀에서 단백질·항체 설계 파이프라인, 연구 기록 검색과 MCP 기반 자동화, GPU·서버 운영을 수행하고 있습니다.</p>
-                    <p>Bio-AI / AI for Science / Computational Biology Engineer 직무에서 연구자와 구현 범위를 구체화하고, 실행 결과를 추적·검토할 수 있는 분석 환경을 만드는 데 기여하고자 합니다.</p>
-                </div>
-            </div>
-             <div class="row mt-5">
-                 <div class="col-12">
-                     <h3 class="sub-section-title text-center">Core Competencies</h3>
-                     <ul class="strength-list">
-                         <li><b>연구 모델을 연결하는 소프트웨어:</b> 단백질 구조·서열 모델과 평가 도구를 연결하고 실행별 산출물·후보 비교·재실행 흐름을 관리합니다.</li>
-                         <li><b>근거를 확인하는 연구 자동화:</b> Qdrant·Neo4j 검색과 MCP 도구를 활용해 연구 기록, 분석 실행과 검토를 연결합니다.</li>
-                         <li data-aos="fade-up" data-aos-delay="100"><b>의료 데이터 통합 및 파이프라인 설계:</b> 오믹스, 임상, 3D 의료영상 등 이종 의료 데이터의 전처리 및 통합 파이프라인 구축.</li>
-                         <li data-aos="fade-up" data-aos-delay="200"><b>AI 모델 개발 및 최적화:</b> 딥러닝(3D CNN, U-Net, SwinUNETR, VAE, LLM) 및 머신러닝(XGBoost, RandomForest) 기반 의료 AI 모델 개발 및 성능 최적화.</li>
-                         <li data-aos="fade-up" data-aos-delay="300"><b>설명 가능한 AI (XAI) 구현:</b> SHAP, Grad-CAM 등을 활용하여 AI 모델의 예측 근거를 시각화하고 해석하는 능력.</li>
-                         <li data-aos="fade-up" data-aos-delay="400"><b>풀스택 개발 역량:</b> Django REST Framework 기반 백엔드 API 개발, React/Flutter 기반 프론트엔드 개발, Docker 기반 배포 경험.</li>
-                         <li data-aos="fade-up" data-aos-delay="500"><b>임상 및 생물학적 도메인 지식:</b> 세포/동물 실험, 인체유래물 관리 경험을 통한 의료/생물학 분야에 대한 깊은 이해.</li>
-                     </ul>
-                 </div>
-             </div>
-        </div>
+    <section id="about-me" class="shell section about" aria-labelledby="about-title">
+      <div>
+        <h2 id="about-title">About</h2>
+        <p>I studied systems biotechnology and worked in biomedical labs and a biobank before moving into scientific software. That experience shapes how I build tools for researchers. I pay particular attention to how data was generated, which inputs and settings went into a run, and whether another person can review the result.</p>
+        <p>At KRIBB’s Biofoundry Project Office, my work spans biomolecular model pipelines, research notebooks, and GPU-backed services.</p>
+      </div>
+      <div id="skills" class="skills">
+        <h3>Technical focus</h3>
+        <dl>
+          <div><dt>Scientific ML</dt><dd>PyTorch, MONAI, protein modeling, medical imaging, multi-omics, SHAP, Grad-CAM</dd></div>
+          <div><dt>Research data &amp; tooling</dt><dd>Python, R, SQL, Qdrant, Neo4j, GraphRAG, MCP, EHR integration</dd></div>
+          <div><dt>Software &amp; infrastructure</dt><dd>FastAPI, Django REST, React, Next.js, Flutter, Celery, Docker, Linux, RunPod</dd></div>
+          <div><dt>Biomedical research</dt><dd>Cell and animal studies, biospecimen management, and research records</dd></div>
+        </dl>
+      </div>
     </section>
 
-    <section id="gallery" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">Gallery</h2>
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item"><img src="images/clinic.png" alt="Clinical" class="d-block w-100 carousel-img"></div>
-
-                    <div class="carousel-item active">
-                        <img src="images/pancreas.gif" alt="Pancreas 3D-GIF" class="d-block w-100 carousel-img">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/shap_summary_dot_Random Forest_fold4.png" alt="SHAP Summary Plot" class="d-block w-100 carousel-img">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/cv_avg_performance_roc_auc_comparison.png" alt="ROC AUC Curve" class="d-block w-100 carousel-img">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pca_loadings_miRNA_PCA_PC3.png" alt="PCA Loadings Plot" class="d-block w-100 carousel-img">
-                    </div>
-
-                    <div class="carousel-item"><img src="images/omics.png" alt="Omics" class="d-block w-100 carousel-img"></div>
-                    <div class="carousel-item"><img src="images/ct.png" alt="CT" class="d-block w-100 carousel-img"></div>
-                    <div class="carousel-item"><img src="images/flutter.png" alt="React-Flutter" class="d-block w-100 carousel-img"></div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+    <section id="career-experience" class="shell section" aria-labelledby="career-title">
+      <header class="section-heading">
+        <h2 id="career-title">Career &amp; education</h2>
+      </header>
+      <div class="career-grid">
+        <div>
+          <h3>Experience</h3>
+          <ol class="timeline">
+            <li><p class="eyebrow">Sep 2025–present</p><h4>Researcher · KRIBB</h4><p>Korea Research Institute of Bioscience and Biotechnology, Biofoundry Project Office, computing team. Scientific model pipelines, research-note automation, and GPU-backed services.</p></li>
+            <li><p class="eyebrow">Feb–Dec 2024</p><h4>Researcher · Asan Institute for Life Sciences</h4><p>Supported ophthalmology and biomedical research through animal studies and cancer cell assays, including cell culture, flow cytometry, and Western blotting.</p></li>
+            <li><p class="eyebrow">Jun 2023–Jan 2024</p><h4>Researcher · Eulji University Biobank</h4><p>Managed human biospecimens, supported diagnostic-kit studies, and collaborated on an automated EMR data upload workflow.</p></li>
+            <li><p class="eyebrow">Mar–Jun 2023</p><h4>Intern · Korea Research Institute of Chemical Technology</h4><p>Reviewed reports and supported events at the Center for Infectious Disease Technology Strategy.</p></li>
+            <li><p class="eyebrow">Jul 2020–Mar 2021</p><h4>Student Assistant · KAIST Research Administration</h4><p>Digitized final project reports and assisted with research administration.</p></li>
+          </ol>
         </div>
+
+        <div>
+          <h3>Education &amp; training</h3>
+          <ol class="timeline">
+            <li><p class="eyebrow">2025</p><h4>Medical AI training project</h4><p>At the Future Convergence Education Institute, led a team project to integrate clinical, omics, and 3D CT data into an explainable AI pipeline.</p></li>
+            <li><p class="eyebrow">Mar 2017–Feb 2023</p><h4>Systems Biotechnology · Chung-Ang University</h4><p>GPA 3.6 / 4.5. Thesis: <cite>Antibiotic resistance in the environment</cite>.</p></li>
+            <li><p class="eyebrow">Jul–Aug 2020</p><h4>Quality Assurance Bootcamp · Comento</h4><p>Five-week course in biopharmaceutical quality processes and regulation.</p></li>
+          </ol>
+          <h3>Qualifications</h3>
+          <ul class="qualifications">
+            <li>Big Data Analysis Engineer <span>Jul 2025</span></li>
+            <li>Information Processing Engineer <span>Jun 2025</span></li>
+            <li>KCCI Chinese Characters, Level 4 <span>Jan 2023</span></li>
+            <li>Word Processor, Level 2 <span>Mar 2009</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-        <div class="container text-center" data-aos="fade-up">
-            <h2 class="section-title">Contact</h2>
-            <p class="contact-text">더 자세한 정보나 협업 문의는 아래 연락처로 부탁드립니다.</p>
-            <div class="contact-info-wrapper">
-                 <a href="mailto:pys74631@naver.com" class="btn btn-outline-primary btn-lg contact-btn" 
-                    id="email-btn" 
-                    data-bs-toggle="tooltip" 
-                    data-bs-placement="top" 
-                    title="클릭하여 이메일 주소 복사">
-                    <i class="fas fa-envelope"></i> Email Me
-                    </a>
-                 <a href="https://github.com/ParkYaeseong" class="btn btn-outline-light btn-lg contact-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Visit GitHub</a>
-            </div>
+    <section id="contact" class="shell section" aria-labelledby="contact-title">
+      <div class="contact">
+        <div><h2 id="contact-title">Get in touch</h2><p>For collaboration on scientific software or research workflows.</p></div>
+        <div class="actions">
+          <a id="email-btn" class="button primary" href="mailto:pys74631@naver.com">Email me <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/yaeseong-park-809854445/">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/ParkYaeseong">GitHub <span aria-hidden="true">↗</span></a>
         </div>
+      </div>
     </section>
-</main>
+  </main>
 
-<footer class="main-footer">
-    <div class="container">
-        <p>Copyright © 2026, 박예성. All Rights Reserved. · Updated 2026.10.07</p>
-    </div>
-</footer>
-
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
-
-
-<div class="modal fade" id="cdssVideoModal" tabindex="-1" aria-labelledby="cdssVideoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="cdssVideoModalLabel">MEORING CDSS 시연 영상</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/hA8ppIV185s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const emailBtn = document.getElementById('email-btn');
-    const tooltip = window.bootstrap ? new bootstrap.Tooltip(emailBtn) : null;
-
-    emailBtn.addEventListener('click', function(event) {
-        if (!navigator.clipboard) return;
-        event.preventDefault(); 
-        
-        const emailAddress = 'pys74631@naver.com';
-
-        // 클립보드에 이메일 주소 복사
-        navigator.clipboard.writeText(emailAddress).then(() => {
-            // 툴팁 내용 변경 및 표시
-            emailBtn.setAttribute('data-bs-original-title', '복사 완료!');
-            tooltip?.show();
-
-            // 2초 후에 원래 툴팁 내용으로 복원
-            setTimeout(() => {
-                emailBtn.setAttribute('data-bs-original-title', '클릭하여 이메일 주소 복사');
-                tooltip?.hide();
-            }, 2000);
-
-        }).catch(err => {
-            console.error('복사 실패:', err);
-            // 복사 실패 시 알림
-            emailBtn.setAttribute('data-bs-original-title', '복사에 실패했습니다.');
-            tooltip?.show();
-        });
-    });
-    if (window.AOS) {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
-        });
-        document.body.classList.add('aos-enabled');
-    }
-
-    if(window.Typed && document.querySelector('.subtitle') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        new Typed('.subtitle', {
-            strings: ["Bio-AI · AI for Science Engineer", "Computational Biology · Research Platform Engineer"],
-            typeSpeed: 140,
-            backSpeed: 100,
-            loop: true,
-            backDelay: 2000
-        });
-    }
-
-    const backToTop = document.querySelector('.back-to-top');
-    if (backToTop) {
-        const toggleBackToTop = () => {
-            if (window.scrollY > 100) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        }
-        window.addEventListener('load', toggleBackToTop);
-        document.addEventListener('scroll', toggleBackToTop);
-    }
-});
-</script>
-
+  <footer class="shell footer">
+    <span>© 2026 Yaeseong Park</span>
+    <a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
