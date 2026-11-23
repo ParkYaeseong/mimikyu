@@ -81,7 +81,10 @@ function setupAppDemos() {
       event.preventDefault();
       title.textContent = demo.querySelector("h4").textContent;
       description.textContent = demo.querySelector("p").textContent;
-      source.href = demo.dataset.source;
+      const sourceUrl = demo.dataset.source;
+      source.hidden = !sourceUrl;
+      if (sourceUrl) source.href = sourceUrl;
+      else source.removeAttribute("href");
       player.poster = demo.querySelector("img").src;
       player.src = demo.href;
       dialog.showModal();
