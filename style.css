@@ -193,6 +193,16 @@ p, li, dd { overflow-wrap: break-word; }
 .gallery img { width: 100%; aspect-ratio: 1.55; object-fit: contain; padding: .45rem; background: var(--tint); }
 .gallery span { display: block; padding: .6rem .7rem; color: var(--accent); font-size: .81rem; font-weight: 650; }
 
+.gallery-heading { margin-bottom: .85rem; }
+.demo-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.demo-tile { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: .8rem; background: var(--white); overflow: hidden; text-decoration: none; }
+.demo-tile:hover { border-color: #8972b8; }
+.demo-tile img { width: 100%; aspect-ratio: 1.6; object-fit: contain; background: var(--tint); border-bottom: 1px solid var(--line); }
+.demo-copy { display: flex; flex: 1; flex-direction: column; gap: .4rem; padding: 1rem; }
+.demo-copy h4 { font-size: 1.2rem; text-wrap: initial; }
+.demo-copy p, #app-demo-description { color: var(--muted); }
+.demo-action { margin-top: auto; padding-top: .25rem; text-decoration: underline; }
+
 .media-dialog {
   width: min(56rem, calc(100% - 1.5rem));
   max-height: calc(100% - 1.5rem);
@@ -213,6 +223,8 @@ p, li, dd { overflow-wrap: break-word; }
 .gallery-controls { flex-wrap: wrap; margin-top: .55rem; }
 .video-frame { aspect-ratio: 16 / 9; margin-bottom: .75rem; overflow: hidden; border-radius: .55rem; background: var(--night); }
 .video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.app-demo-player { display: block; width: 100%; max-height: 62dvh; margin-bottom: .7rem; border-radius: .55rem; background: var(--night); }
+#app-demo-description { margin-bottom: .5rem; }
 
 .about, .career-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.4rem, 5vw, 4.7rem); }
 .about { align-items: start; }
@@ -249,7 +261,7 @@ p, li, dd { overflow-wrap: break-word; }
   .header-inner { flex-wrap: wrap; row-gap: .15rem; padding-block: .45rem; }
   .site-header nav { justify-content: space-between; flex: 1 0 100%; }
   .site-header nav a { min-height: 2.4rem; padding-block: .35rem; }
-  .hero, .project-grid, .section-heading, .case-study, .about, .career-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero, .project-grid, .section-heading, .case-study, .demo-gallery, .about, .career-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { gap: 1.15rem; padding-block: 1.65rem; }
   .hero h1 { font-size: clamp(2.8rem, 11.5vw, 4.2rem); }
   .portrait { justify-self: start; max-width: 22rem; }

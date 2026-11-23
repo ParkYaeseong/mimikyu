@@ -294,8 +294,28 @@
     <section id="gallery" class="shell section" aria-labelledby="gallery-title">
       <header class="section-heading">
         <h2 id="gallery-title">Project gallery</h2>
-        <p>Screenshots and figures from the medical AI projects.</p>
       </header>
+      <h3 class="gallery-heading">App demos</h3>
+      <div class="demo-gallery">
+        <a class="demo-tile" href="media/demos/labnoteo-workflows.mp4" data-source="https://github.com/sblabkribb/labnoteo-desktop/blob/896a0dc9f8625d5b0f9956f0b2e5eab9319c6129/docs/images/en/labnoteo-workflows.gif">
+          <img src="media/demos/labnoteo-workflows.webp" width="960" height="600" loading="lazy" alt="">
+          <div class="demo-copy">
+            <h4>labnoteO Desktop</h4>
+            <p>Add a Unit Operation to a workflow and track its progress in a demo lab notebook.</p>
+            <span class="text-link demo-action"><span aria-hidden="true">▶</span> Play demo · 19 sec</span>
+          </div>
+        </a>
+        <a class="demo-tile" href="media/demos/llm-tuning-workflow.mp4" data-source="https://github.com/ParkYaeseong/llm-tuning-factory/blob/ab77cd8a9e7945017a699b5133a9727ac1cd4691/docs/images/factory-graph-en.gif">
+          <img src="media/demos/llm-tuning-workflow.webp" width="1056" height="720" loading="lazy" alt="">
+          <div class="demo-copy">
+            <h4>LLM Tuning Factory</h4>
+            <p>Build a graph with parallel training branches and an evaluation step. Recorded with synthetic data and a mock backend.</p>
+            <span class="text-link demo-action"><span aria-hidden="true">▶</span> Play demo · 12 sec</span>
+          </div>
+        </a>
+      </div>
+
+      <h3 class="gallery-heading">Medical AI figures</h3>
       <div class="gallery" id="projectCarousel">
         <figure><a href="images/clinic.png"><img src="images/clinic.png" width="1913" height="945" alt="Clinical dashboard screenshot" loading="lazy"><span>Clinical dashboard</span></a></figure>
         <figure><a href="images/pancreas.gif"><img src="images/pancreas-still.webp" width="614" height="475" alt="Preview of the 3D pancreas visualization" loading="lazy"><span>3D pancreas visualization (GIF)</span></a></figure>
@@ -399,6 +419,16 @@
     </div>
     <div class="video-frame"></div>
     <a class="text-link" href="https://www.youtube.com/watch?v=hA8ppIV185s" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+  </dialog>
+
+  <dialog id="app-demo-dialog" class="media-dialog" aria-labelledby="app-demo-title">
+    <div class="media-dialog-header">
+      <h2 id="app-demo-title">App demo</h2>
+      <form method="dialog"><button class="button dialog-button" autofocus>Close</button></form>
+    </div>
+    <video class="app-demo-player" controls playsinline preload="none" aria-labelledby="app-demo-title"></video>
+    <p id="app-demo-description"></p>
+    <a class="text-link" target="_blank" rel="noopener noreferrer">Original demo on GitHub <span aria-hidden="true">↗</span></a>
   </dialog>
 </body>
 </html>

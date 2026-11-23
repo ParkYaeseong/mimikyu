@@ -68,9 +68,40 @@ function setupVideo() {
   });
 }
 
+function setupAppDemos() {
+  const dialog = document.querySelector("#app-demo-dialog");
+  const player = dialog.querySelector("video");
+  const title = dialog.querySelector("h2");
+  const description = dialog.querySelector("p");
+  const source = dialog.querySelector("a");
+
+  for (const demo of document.querySelectorAll(".demo-tile")) {
+    demo.addEventListener("click", (event) => {
+      if (!isPlainClick(event)) return;
+      event.preventDefault();
+      title.textContent = demo.querySelector("h4").textContent;
+      description.textContent = demo.querySelector("p").textContent;
+      source.href = demo.dataset.source;
+      player.poster = demo.querySelector("img").src;
+      player.src = demo.href;
+      dialog.showModal();
+      player.play().catch(() => { /* The player remains available for manual playback. */ });
+    });
+  }
+
+  dialog.addEventListener("close", () => {
+    if (dialog.open) return;
+    player.pause();
+    player.removeAttribute("src");
+    player.removeAttribute("poster");
+    player.load();
+  });
+}
+
 if (typeof HTMLDialogElement !== "undefined") {
   setupGallery();
   setupVideo();
+  setupAppDemos();
 }
 
 if (!motion.matches && "IntersectionObserver" in window) {
